@@ -36,7 +36,7 @@ CMD ["./cipher"]
 
 LABEL org.opencontainers.image.created="${BUILD_DATE}" \
       org.opencontainers.image.title="cipher-service" \
-      org.opencontainers.image.authors="Adesina Hammed <delameh@icloud.com>" \
+      org.opencontainers.image.authors="Adesina Hammed H. <delameh@icloud.com>" \
       org.opencontainers.image.source="https://github.com/cipher" \
       org.opencontainers.image.revision="${BUILD_REF}" \
       org.opencontainers.image.vendor="Appital Inc."
