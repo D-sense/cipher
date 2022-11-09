@@ -39,7 +39,7 @@ func encrypt200(t *testing.T) {
 		if err != nil {
 			t.Fatal(err)
 		}
-		req, err := http.NewRequest(http.MethodGet, "/api/v1/encrypt", bytes.NewBuffer(body))
+		req, err := http.NewRequest(http.MethodPost, "/api/v1/encrypt", bytes.NewBuffer(body))
 		if err != nil {
 			t.Fatal(err)
 		}
@@ -73,7 +73,7 @@ func encrypt200(t *testing.T) {
 		if err != nil {
 			t.Fatal(err)
 		}
-		req, err := http.NewRequest(http.MethodGet, "/api/v1/encrypt", bytes.NewBuffer(body))
+		req, err := http.NewRequest(http.MethodPost, "/api/v1/encrypt", bytes.NewBuffer(body))
 		if err != nil {
 			t.Fatal(err)
 		}
@@ -111,7 +111,7 @@ func decrypt200(t *testing.T) {
 		if err != nil {
 			t.Fatal(err)
 		}
-		req, err := http.NewRequest(http.MethodGet, "/api/v1/decrypt", bytes.NewBuffer(body))
+		req, err := http.NewRequest(http.MethodPost, "/api/v1/decrypt", bytes.NewBuffer(body))
 		if err != nil {
 			t.Fatal(err)
 		}
@@ -145,7 +145,7 @@ func decrypt200(t *testing.T) {
 		if err != nil {
 			t.Fatal(err)
 		}
-		req, err := http.NewRequest(http.MethodGet, "/api/v1/decrypt", bytes.NewBuffer(body))
+		req, err := http.NewRequest(http.MethodPost, "/api/v1/decrypt", bytes.NewBuffer(body))
 		if err != nil {
 			t.Fatal(err)
 		}

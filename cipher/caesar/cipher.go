@@ -3,10 +3,10 @@
 package caesar
 
 import (
-	"appital-service/business/core/models"
-	"appital-service/business/system/validation"
 	"fmt"
 	"regexp"
+	"service/business/core/models"
+	"service/business/system/validation"
 	"strings"
 	"unicode"
 )

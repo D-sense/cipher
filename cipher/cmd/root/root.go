@@ -1,16 +1,16 @@
 package root
 
 import (
-	"appital-service/business/core/models"
-	"appital-service/caesar"
 	"errors"
 	"fmt"
+	"service/business/core/models"
+	"service/caesar"
 )
 
 func Run(action, text string, key int) (string, error) {
 	result := ""
 	switch action {
-	case "encode":
+	case "encrypt":
 		input := models.NewEncoding{
 			Text: text,
 			Key:  key,
@@ -22,7 +22,7 @@ func Run(action, text string, key int) (string, error) {
 		}
 
 		result = encoded
-	case "decode":
+	case "decrypt":
 		input := models.NewDecoding{
 			Text: text,
 			Key:  key,

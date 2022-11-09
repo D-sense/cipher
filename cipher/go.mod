@@ -1,4 +1,4 @@
-module appital-service
+module service
 
 go 1.19
 

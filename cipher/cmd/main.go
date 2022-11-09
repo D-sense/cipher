@@ -1,15 +1,15 @@
 package main
 
 import (
-	"appital-service/cmd/root"
 	"flag"
 	"fmt"
 	"log"
 	"os"
+	"service/cmd/root"
 )
 
 func main() {
-	var action = flag.String("action", "", "the action you need to perform (encoding or decoding)")
+	var action = flag.String("action", "", "the action you need to perform (encrypting or decrypting)")
 	var text = flag.String("text", "", "text to be enciphered or deciphered")
 	var key = flag.Int("key", 0, "value that specifies the alphabet rotation factor")
 	flag.Usage = func() {

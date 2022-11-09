@@ -1,10 +1,10 @@
 package handler
 
 import (
-	"appital-service/business/core/models"
-	"appital-service/caesar"
-	"appital-service/foundation/web"
 	"net/http"
+	"service/business/core/models"
+	"service/caesar"
+	"service/foundation/web"
 )
 
 // Encrypt encrypts a string using the Caesar Cipher.

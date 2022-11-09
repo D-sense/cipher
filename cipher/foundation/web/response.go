@@ -1,9 +1,9 @@
 package web
 
 import (
-	"appital-service/foundation/logger"
 	"encoding/json"
 	"net/http"
+	"service/foundation/logger"
 )
 
 type Body struct {

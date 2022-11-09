@@ -1,8 +1,6 @@
 package main
 
 import (
-	"appital-service/api/handler"
-	"appital-service/foundation/logger"
 	"context"
 	"errors"
 	"fmt"
@@ -12,6 +10,8 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
+	"service/api/handler"
+	"service/foundation/logger"
 	"syscall"
 	"time"
 )
@@ -79,8 +79,8 @@ func run(log *zap.SugaredLogger) error {
 	router := httptreemux.NewContextMux()
 
 	group := router.NewGroup("/api")
-	group.GET("/v1/encrypt", handler.Encrypt)
-	group.GET("/v1/decrypt", handler.Decrypt)
+	group.POST("/v1/encrypt", handler.Encrypt)
+	group.POST("/v1/decrypt", handler.Decrypt)
 
 	// Construct a server to service the requests against the mux.
 	api := http.Server{
