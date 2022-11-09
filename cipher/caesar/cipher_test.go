@@ -1,8 +1,8 @@
 package caesar_test
 
 import (
-	"appital-service/business/core/models"
-	"appital-service/caesar"
+	"service/business/core/models"
+	"service/caesar"
 	"testing"
 )
 

@@ -1,12 +1,12 @@
 package tests
 
 import (
-	"appital-service/api/handler"
-	"appital-service/business/core/models"
 	"bytes"
 	"encoding/json"
 	"net/http"
 	"net/http/httptest"
+	"service/api/handler"
+	"service/business/core/models"
 	"strings"
 	"testing"
 )
