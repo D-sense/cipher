@@ -55,7 +55,7 @@ func run(log *zap.SugaredLogger) error {
 		},
 	}
 
-	const prefix = "CIPHER"
+	const prefix = "AGENT"
 	help, err := conf.Parse(prefix, &cfg)
 	if err != nil {
 		if errors.Is(err, conf.ErrHelpWanted) {
